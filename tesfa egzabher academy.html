@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///C:/Users/Biruk/Documents/school%20tesfa/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tesfa egzabher academy_files/styles.css">
+    <link rel="scriptsheet" href="file:///C:/Users/Biruk/Documents/school%20tesfa/result.checker.js">
+
+    <title>School Website</title>
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="./tesfa egzabher academy_files/all.min.css">
+    <style>
+
+        header {
+            display: flex;
+             align-items: center; /* Align items vertically in the center */
+            justify-content: space-between; /* Space between logo and nav */
+            padding: 10px 20px; /* Padding around the header */
+            background-color: #151d25; /* Dark background color */
+            border-bottom: 1px solid hwb(0 93% 3%); /* Optional border for separation */
+        }
+
+        .logo {
+            font-size: 24px; /* Font size for the logo text */
+            lighting-color: #007bff;
+            size: 0ch;
+            font-weight: bold; /* Bold text */
+            color: #f4f5f7; /* Logo color */
+            
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove bullet points */
+            display: flex; /* Flexbox layout for navigation items */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+        }
+
+        nav ul li {
+            margin-left: 20px; /* Space between navigation items */
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Remove underline from links */
+            color: #f4f5f7; /* Link color */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        .page {
+            display: none; /* Hide all pages by default */
+        }
+
+        .active {
+            display: block; /* Show the active page */
+        }
+    
+</style>
+
+    </head><body><header>
+        <img src="./tesfa egzabher academy_files/photo_2024-11-23_10-13-53.jpg" alt="" class="logo-image">
+        <div class="logo">Tesfa Egziabher Academy</div>
+        <button class="menu-button" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i> <!-- Font Awesome icon for the menu -->
+        </button>
+        <nav id="navbar">
+            <ul>
+                <li><a href="file:///C:/Users/Biruk/Documents/school%20tesfa/index.html#" onclick="showPage(&#39;home&#39;)"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="file:///C:/Users/Biruk/Documents/school%20tesfa/index.html#" onclick="showPage(&#39;about&#39;)"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="file:///C:/Users/Biruk/Documents/school%20tesfa/index.html#" onclick="showPage(&#39;contact&#39;)"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="file:///C:/Users/Biruk/Documents/school%20tesfa/index.html#" onclick="showPage(&#39;dashboard&#39;)"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="file:///C:/Users/Biruk/Documents/school%20tesfa/index.html#" onclick="showPage(&#39;create-account&#39;)"><i class="fas fa-user-plus"></i> Create Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="content">
+        <section id="home" class="page active">
+            <div class="home-content">
+                <h1>Welcome to Tesfa Egziabher Academy</h1>
+                <i class="fab fa-font-awesome-logo-full fa-3x"></i>
+                <img src="./tesfa egzabher academy_files/photo_2024-11-23_09-03-02.jpg" alt="School Director" class="director-photo">
+                <p><strong>directorCEO: Beminet Masresha</strong></p>  <!--Director Name-->
+                <p>The Director of a school plays a pivotal role in shaping the educational environment and ensuring the institution's mission is effectively implemented. This individual is responsible for overseeing all aspects of school operations, including curriculum development, staff management, and student affairs. The Director collaborates with teachers, parents, and the community to foster an inclusive and supportive atmosphere conducive to learning. They are also tasked with strategic planning and budgeting, ensuring that resources are allocated efficiently to enhance educational programs. Additionally, the Director serves as the primary spokesperson for the school, advocating for its needs and achievements within the broader community.</p>
+
+
+<section id="mission-vision-goals" class="home-content">
+                    <h1>Our Mission, Vision, and Goals</h1>
+                    <div class="container">
+                        <div class="card" data-text="Our mission is to provide quality education that empowers individuals to achieve their full potential and contribute positively to society.">
+                            <h2>Mission</h2>
+                            <p class="auto-typing">Our mission is to provide quality education that empowers individuals to achieve their full potential and contribute positively to society.</p>
+                        </div>
+                        <div class="card" data-text="We envision a world where education is accessible to all, fostering innovation, creativity, and a lifelong love for learning.">
+                            <h2>Vision</h2>
+                            <p class="auto-typing">We envision a world where education is accessible to all, fostering innovation, creativity, and a lifelong love for learning.</p>
+                        </div>
+                        <div class="card" data-text="Our goals include enhancing educational resources, promoting inclusive learning environments, and supporting community engagement in education.">
+                            <h2>Goals</h2>
+                            <p class="auto-typing">Our goals include enhancing educational resources, promoting inclusive learning environments, and supporting community engagement in education.</p>
+                        </div>
+                    </div>
+                
+                <script>
+                    // Auto typing effect
+                    const typingDelay = 50; // Delay between each character
+                    const cards = document.querySelectorAll('.card');
+                
+                    cards.forEach(card => {
+                        const text = card.getAttribute('data-text');
+                        const pElement = card.querySelector('.auto-typing');
+                
+                        let index = 0;
+                
+                        function type() {
+                            if (index < text.length) {
+                                pElement.textContent += text.charAt(index);
+                                index++;
+                                setTimeout(type, typingDelay);
+                            }
+                        }
+                
+                        type(); // Start typing effect
+                    });
+                </script>
+                
+ 
+        
+    
+            <div class="director-office">
+                <h2>Director's Office</h2>
+                <img src="./tesfa egzabher academy_files/photo_2024-11-23_09-09-22.jpg" alt="Director&#39;s Office" class="office-photo">
+                <p>The Director's office is a hub of activity and decision-making. It reflects the values and mission of Tesfa Egr Academy, providing a welcoming space for students, staff, and parents.</p>
+            </div>
+
+
+<div class="history-gallery">
+                <h3>History Gallery</h3>
+                <div class="gallery">
+                    <img src="./tesfa egzabher academy_files/photo_2024-11-23_21-30-10.jpg" alt="Historical Event 1" class="gallery-item">
+                    <img src="./tesfa egzabher academy_files/photo_2024-11-23_11-10-25.jpg" alt="Historical Event 2" class="gallery-item">
+                    <img src="./tesfa egzabher academy_files/photo_2024-11-23_10-22-22.jpg" alt="Historical Event 3" class="gallery-item">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+        </section>
+
+
+          <section class="testimonals">
+            <h1>What Our Students Say</h1>
+            <p>Boom! This course was amazing, and I learned so much!</p>
+            <img src="./tesfa egzabher academy_files/photo_2024-11-28_20-41-46.jpg">
+        </section>
+        
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    
+   <p><a href="file:///C:/Users/Biruk/Documents/school%20tesfa/index.html#" onclick="showPage(&#39;create-account&#39;)">Create an Account</a></p> <!-- Link to Create Account -->
+        <section id="about" class="page">
+            
+        <!-- Additional sections can go here -->
+    
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Show the selected page
+            const activePage = document.getElementById(pageId);
+            if (activePage) {
+                activePage.classList.add('active');
+            }
+        }
+    </script>
+
+
+<section id="about" class="page about-section">
+            <h2>About Us</h2>
+
+            <img src="./tesfa egzabher academy_files/photo_2024-11-23_21-48-09.jpg" alt="About Us" class="about-us">
+            <p>Information about the academy goes here. We are dedicated to providing quality education and fostering a nurturing environment for our students.</p>
+        </section>
+        
+        <section id="achievements">
+            <h2>School Achievements</h2>
+            <img src="./tesfa egzabher academy_files/photo_2024-11-23_21-48-09.jpg">
+            <p>Our school has achieved remarkable milestones this year:</p>
+            <ul>
+                <li>First place in the regional science fair.</li>
+                <li>Successful community service projects.</li>
+                <li>High scores in standardized tests.</li>
+            </ul>
+        </section>
+
+        <section class="form-container">
+            <h2>Check School Result</h2>
+            <form id="result-check-form">
+                <article class="form-group">
+                    <label for="student-name">Full Name:</label>
+                    <input type="text" id="student-name" name="student-name" required="">
+                </article>
+                <article class="form-group">
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id" name="student-id" required="">
+                </article>
+                <article class="form-group">
+                    <label for="class">Class:</label>
+                    <select id="class" name="class" required="">
+                        <option value="">Select Class</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <!-- Add more classes as needed -->
+                    </select>
+                </article>
+                <article class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required="">
+                </article>
+                <article class="form-group">
+                    <button type="submit">Check Result</button>
+                </article>
+            </form>
+           
+      
+        </section>
+        
+        <section id="top-students">
+            <h2>Top 10 Students</h2>
+            <div class="student-list">
+                <div class="student">
+                    <img src="file:///C:/Users/Biruk/Documents/school%20tesfa/student1.jpg" alt="Student 1">
+                    <p>Student Name 1 - Marks: 95%</p>
+                </div>
+                <div class="student">
+                    <img src="file:///C:/Users/Biruk/Documents/school%20tesfa/student2.jpg" alt="Student 2">
+                    <p>Student Name 2 - Marks: 94%</p>
+                </div>
+                <div class="student">
+                    <img src="file:///C:/Users/Biruk/Documents/school%20tesfa/student3.jpg" alt="Student 3">
+                    <p>Student Name 3 - Marks: 93%</p>
+                </div>
+                <!-- Add more student divs as needed -->
+            </div>
+        </section>
+        
+        <section id="health-tips">
+            <h2>Health Tips for KG Students</h2>
+            <ul>
+                <li>Eat a balanced diet with fruits and vegetables.</li>
+                <li>Drink plenty of water throughout the day.</li>
+                <li>Get enough sleep every night.</li>
+                <li>Wash hands regularly to stay healthy.</li>
+            </ul>
+        </section>
+        
+        <section id="publication-info">
+            <h2>Publication Information</h2>
+            <p>This section was published on: <span id="publish-date"></span></p>
+
+        </section>
+        
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p>
+            <img src="./tesfa egzabher academy_files/photo_2024-11-23_11-03-06.png" alt="Email Icon" class="contact-icon"> 
+            Email: 
+            <a href="mailto:info@tesfaegracademy.com" class="contact-link">info@tesfaegracademy.com</a>
+        </p>
+        <p>
+            <img src="file:///C:/Users/Biruk/Documents/school%20tesfa/path/to/telegram-icon.png" alt="Telegram Icon" class="contact-icon"> 
+            Telegram Channel: 
+            <a href="https://t.me/tesfaegracademy" target="_blank" class="contact-link">@tesfaegracademy</a>
+        </p>
+        <p>
+            <i class="fas fa-phone contact-icon"></i> 
+            Phone: 
+            <a href="tel:+1234567890" class="contact-link">+1 (234) 567-890</a>
+        </p>
+        <p>
+            <i class="fas fa-map-marker-alt contact-icon"></i> 
+            Address: 123 Academy Lane, City, Country
+        </p>
+    </div>
+</section>
+
+
+<section id="dashboard" class="page" style="padding: 40px; background-color: #530606;">
+            <h2>Our Official Leaders</h2>
+            <ul class="leader-list">
+                <li>
+                    <img src="file:///C:/Users/Biruk/Documents/school%20tesfa/leader1.jpg" alt="Leader 1" class="leader-img">
+                    <h3>Leader Name 1</h3>
+                    <p>Position: Principal</p>
+                    <p>Education Level: PhD in Education</p>
+                    <p>Description: Leader 1 has over 20 years of experience in educational leadership and is dedicated to student success.</p>
+                </li>
+                <li>
+                    <img src="file:///C:/Users/Biruk/Documents/school%20tesfa/leader2.jpg" alt="Leader 2" class="leader-img">
+                    <h3>Leader Name 2</h3>
+                    <p>Position: Vice Principal</p>
+                    <p>Education Level: Master's in Educational Administration</p>
+                    <p>Description: Leader 2 focuses on curriculum development and teacher training.</p>
+                </li>
+                <li>
+                    <img src="file:///C:/Users/Biruk/Documents/school%20tesfa/leader3.jpg" alt="Leader 3" class="leader-img">
+                    <h3>Leader Name 3</h3>
+                    <p>Position: Head of Curriculum</p>
+                    <p>Education Level: Master's in Curriculum Studies</p>
+                    <p>Description: Leader 3 has a passion for innovative teaching strategies and improving student engagement.</p>
+                </li>
+                <li>
+                    <img src="file:///C:/Users/Biruk/Documents/school%20tesfa/leader4.jpg" alt="Leader 4" class="leader-img">
+                    <h3>Leader Name 4</h3>
+                    <p>Position: Head of Administration</p>
+                    <p>Education Level: MBA in Educational Leadership</p>
+                    <p>Description: Leader 4 manages school operations and ensures compliance with educational standards.</p>
+                </li>
+                <li>
+                    <img src="file:///C:/Users/Biruk/Documents/school%20tesfa/leader5.jpg" alt="Leader 5" class="leader-img">
+                    <h3>Leader Name 5</h3>
+                    <p>Position: Head of Student Affairs</p>
+                    <p>Education Level: Master's in Counseling</p>
+                    <p>Description: Leader 5 is dedicated to student well-being and support services.</p>
+                </li>
+            </ul>
+        
+            <h2>Web Creator</h2>
+            <div class="web-creator">
+                <img src="file:///C:/Users/Biruk/Documents/school%20tesfa/web-creator.jpg" alt="Web Creator" class="creator-img">
+                <h3>Your Name</h3>
+                <p>Experience: Over 5 years of experience in web development, specializing in creating user-friendly and responsive websites for educational institutions.</p>
+                <p>Description: Passionate about leveraging technology to enhance learning experiences and streamline administrative processes.</p>
+            </div>
+        </section>
+
+        <!-- Create Account Section -->
+<section id="create-account" class="page" style="padding: 40px; background-color: #f4f4f4;">
+    <h2>Create an Account</h2>
+    <form id="signup-form" method="POST" action="file:///C:/submit-signup">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required="">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required="">
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required="">
+        </div>
+
+        <!-- Google Sign-Up Button -->
+        <div class="form-group">
+            <button type="button" class="google-signup" onclick="googleSignUp()">
+                <i class="fab fa-google"></i> Sign Up with Google
+            </button>
+        </div>
+
+
+<!-- Human Verification -->
+        <div class="form-group">
+            <label for="captcha">Please verify you are human:</label>
+            <input type="text" id="captcha" name="captcha" placeholder="Type the characters you see here" required="">
+            <!-- This can be replaced with an actual CAPTCHA implementation -->
+        </div>
+
+        <button type="submit">Create Account</button>
+    </form>
+</section>
+
+<!-- Progress Bar -->
+<div id="progress-container" style="width: 100%; background-color: #e0e0e0; margin-bottom: 20px;">
+    <div id="progress-bar" style="width: 0%; height: 5px; background-color: #007bff;"></div>
+</div>
+
+<!-- Create Account Section -->
+<section id="create-account" class="page" style="padding: 40px; background-color: #f4f4f4;">
+    <h2>Create an Account</h2>
+    <form id="signup-form" method="POST" action="file:///C:/submit-signup">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required="">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required="">
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required="">
+        </div>
+
+        <!-- Google Sign-Up Button -->
+        <div class="form-group">
+            <button type="button" class="google-signup" onclick="googleSignUp()">
+                <i class="fab fa-google"></i> Sign Up with Google
+            </button>
+        </div>
+
+        <!-- Human Verification -->
+        <div class="form-group">
+            <label for="captcha">Please verify you are human:</label>
+            <input type="text" id="captcha" name="captcha" placeholder="Type the characters you see here" required="">
+        </div>
+
+        <button type="submit">Create Account</button>
+    </form>
+</section>
+<style> .form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.google-signup {
+    background-color: #db4437; /* Google red */
+}
+
+.google-signup:hover {
+    background-color: #c13527; /* Darker red */
+
+}
+</style>
+<section>
+
+
+</section>
+
+
+<style>
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .google-signup {
+        background-color: #db4437; /* Google red */
+    }
+
+    .google-signup:hover {
+        background-color: #c13527; /* Darker red */
+    }
+</style>
+
+
+   
+
+<style>
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .google-signup {
+        background-color: #db4437; /* Google red */
+    }
+
+    .google-signup:hover {
+        background-color: #f0d6d3; /* Darker black */
+        
+    }
+</style>
+
+<script>
+    function googleSignUp() {
+        // Here you would integrate with Google Sign-In API
+        alert('Google Sign-In functionality to be implemented.');
+    }
+</script>
+
+        
+        <style>
+            .leader-list {
+                list-style-type: none;
+                padding: 0;
+            }
+        
+            .leader-list li {
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                padding: 15px;
+                background-color: white;
+                border-radius: 8px;
+            }
+        
+            .leader-img {
+                width: 100px;
+                height: auto;
+                border-radius: 50%;
+                margin-right: 15px;
+                float: left;
+            }
+        
+            .web-creator {
+                margin-top: 40px;
+                text-align: center;
+            }
+        
+            .creator-img {
+                width: 150px;
+                height: auto;
+                border-radius: 50%;
+            }
+        </style>
+        
+        
+        
+        <!-- Additional sections can go here -->
+    
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Show the selected page
+            const activePage = document.getElementById(pageId);
+            if (activePage) {
+                activePage.classList.add('active');
+            }
+        }
+    </script>
+    <script>
+        // Function to set the email field
+        function setEmail() {
+            const emailInput = document.getElementById('email'); // Select the email input field
+            emailInput.value = 'biruktemesgen00@gmail.com'; // Set its value
+        }
+        
+        // Call the function to set the email when the page loads
+        window.onload = function() {
+            setEmail(); // Automatically fill in the email when the page loads
+        };
+        </script>
+
+
+    <footer>
+        <p>© 2024 Tesfa Egziabher Academy. All rights reserved.</p>
+    </footer>
+
+</body></html>
